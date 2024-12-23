@@ -1,0 +1,72 @@
+/* header.css */
+
+.logo-img {
+    width: 120px; /* Ajusta el tamaño del logo */
+    height: auto;
+  }
+  
+.container-nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    backdrop-filter: blur(10px); /* Desenfoque de fondo */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sutil sombra para destacar el menú */
+    border-bottom: solid 1px var(--clr-sec);
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; 
+  }
+  
+  .nav-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .nav-link {
+    font-family: var(--font-pr);
+    font-size: 1.5rem;
+    color: var(--clr-sec);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--clr-details);
+  }
+  
+  .nav-link::before {
+    content: "<";
+    position: absolute;
+    left: -20px;
+    font-size: 1.2rem;
+    color: var(--clr-details);
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-link::after {
+    content: "/>";
+    position: absolute;
+    right: -20px;
+    font-size: 1.2rem;
+    color: var(--clr-details);
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-link:hover::before {
+    transform: translateX(-5px);
+  }
+  
+  .nav-link:hover::after {
+    transform: translateX(5px);
+  }
+  
+  
