@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/footerContact.css'; 
 import emailjs from '@emailjs/browser';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function FooterContact() {
     const handleSubmit = (e) => {
@@ -35,6 +35,11 @@ function FooterContact() {
                     <p>Email: igajardojimenez@gmail.com</p>
                     <p>Teléfono: +(56) 9 9060 3728</p>
                     <p>Dirección: Baquedano 01100, Santiago, Chile</p>
+                    <h5>Aqui puedes ver el desarrollo de esta pagina WEB</h5>
+                    <a className='icon-git'  href="https://github.com/isragajardo/Portfolio/" target="_blank" rel="noopener noreferrer">
+                            <FaGithub />
+                        </a>
+                    
                 </div>
                 <div className="contact-form">
                     <h3>Envíame un correo</h3>

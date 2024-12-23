@@ -69,7 +69,7 @@ form button:hover {
     gap: 20px;
 }
 
-.social-icons a {
+.social-icons a,.icon-git {
     color: var(--clr-sec);
     font-size: 2rem;
     transition: color 0.3s ease, transform 0.3s ease;
