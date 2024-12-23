@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "../styles/about.css";
 import Isra from "../img/isra.png";
+import IsraResponsive from "../img/isra-responsive.png";
 import { FaArrowDown } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -17,7 +18,8 @@ function About() {
         <div className="about" id="sobremí">
             <div className="about-me" data-aos="fade-up">
                 <div className="about-me-img" data-aos="zoom-in">
-                    <img className="jello-vertical" src={Isra} alt="Israel Gajardo" />
+                    <img className="jello-vertical isra isra-up" src={Isra} alt="Israel Gajardo" />
+                    <img className="jello-vertical isra isra-down" src={IsraResponsive} alt="Israel Gajardo" />
                 </div>
                 <div className="text-about-me" data-aos="fade-left" data-aos-delay="200">
                     <h1 className="tittle-about">Israel Gajardo</h1>

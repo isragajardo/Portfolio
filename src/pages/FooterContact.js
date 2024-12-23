@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/footerContact.css'; 
 import emailjs from '@emailjs/browser';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function FooterContact() {
     const handleSubmit = (e) => {
@@ -61,13 +61,16 @@ function FooterContact() {
                     </form>
                 </div>
                 <div className="social-media">
-                    <h3>Síguenos</h3>
+                    <h3>Sígueme</h3>
                     <div className="social-icons">
                         <a href="https://www.linkedin.com/in/israel-gajardo-66357716b/" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin />
                         </a>
                         <a href="https://www.instagram.com/isragaj/" target="_blank" rel="noopener noreferrer">
                             <FaInstagram />
+                        </a>
+                        <a href="https://github.com/isragajardo" target="_blank" rel="noopener noreferrer">
+                            <FaGithub />
                         </a>
                     </div>
                 </div>
@@ -77,4 +80,5 @@ function FooterContact() {
 }
 
 export default FooterContact;
+
 
