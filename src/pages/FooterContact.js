@@ -15,18 +15,6 @@ function FooterContact() {
                 alert('Error al enviar el mensaje.');
             });
     };
-
-    const scrollTo = (direction) => {
-        const currentSection = document.getElementById("contact");
-        const targetSection = direction === "up"
-          ? currentSection.previousElementSibling
-          : currentSection.nextElementSibling;
-
-        if (targetSection) {
-          targetSection.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
     return (
         <footer className="footer-contact" id='contacto'>
             <div className="footer-container">

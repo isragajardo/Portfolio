@@ -7,10 +7,6 @@ import logo from "../img/logo.png";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
-
   useEffect(() => {
     AOS.init({
       duration: 1000,

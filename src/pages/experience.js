@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../styles/experience.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaArrowUp, FaArrowDown } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
  
 function Experience() {
   useEffect(() => {
@@ -11,19 +11,6 @@ function Experience() {
       once: true,
     });
   }, []);
-
-  const scrollTo = (direction) => {
-    const currentSection = document.getElementById("experience");
-    const targetSection =
-      direction === "up"
-        ? currentSection.previousElementSibling
-        : currentSection.nextElementSibling;
-
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div className="experience" id="experiencia">
       <div className="experience-content">
