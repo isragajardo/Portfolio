@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import logo from "../img/logo.png";
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     AOS.init({
