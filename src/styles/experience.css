@@ -4,10 +4,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto; /* Cambiado de 100vh a auto para permitir que el contenido se ajuste */
-    padding: 40px 20px 20px; /* Aumento del espaciado superior */
+    height: auto; 
+    padding: 40px 20px 20px;
     background-color: var(--clr-pr);
-    overflow: auto; /* Evitar desbordamientos */
+    overflow: auto;
 }
 
 .experience-content {
@@ -20,7 +20,7 @@
     width: 100%;
     margin-top: 100px;
     text-align: left;
-    flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
+    flex-wrap: wrap;
 }
 .experience-content p{
     color: var(--text-sec);
