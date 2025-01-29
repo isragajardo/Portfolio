@@ -24,11 +24,10 @@ function About() {
                 <div className="text-about-me" data-aos="fade-left" data-aos-delay="200">
                     <h1 className="tittle-about">Israel Gajardo</h1>
                     <p>
-                    Soy una persona analítica, creativa y con facilidad para resolver problemas. Tengo una mentalidad de aprendizaje continuo, me adapto rápidamente a cambios y tecnologías, y combino mis habilidades técnicas con una excelente capacidad para trabajar en equipo y gestionar tareas de manera autónoma.
-
-Cuento con experiencia en desarrollo web HTML, CSS, JavaScript, React. tambien administración de CRMs como Zendesk, Hubspot y Bitrix, gestión de ERPs como Oracle Netsuite y Softland, así como en la optimización de procesos y resolución de incidencias. También tengo conocimientos en plataformas como WordPress, Shopify y JumpSeller, gestionando tiendas online, integrando pasarelas de pago y personalizando experiencias de usuario.
-
-Además de mis competencias profesionales, disfruto de actividades como el fútbol, viajar y acampar, las cuales me mantienen activo y motivado para enfrentar nuevos desafíos.
+                    Soy un apasionado de la programacion, con capacidad para resolver problemas de
+                    manera ágil y una mentalidad de aprendizaje continuo. Me adapto fácilmente a
+                    cambios y nuevas tecnologías. Además, destaco por mi habilidad para el trabajo en
+                    equipo y la gestión autónoma de tareas
                     </p>
                     <p>
                         En mis tiempos libres me gusta hacer deporte, juego mucho futbol, tambien viajar y acampar
