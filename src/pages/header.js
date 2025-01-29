@@ -63,7 +63,7 @@ function Header() {
               <li className="nav-item">
                 <a
                   className="nav-link download-btn"
-                  href="/assets/mi-archivo.pdf"
+                  href="/cv.pdf"
                   download="mi-archivo.pdf"
                   data-aos="fade-up"
                   data-aos-delay="1500"
