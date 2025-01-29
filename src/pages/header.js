@@ -16,9 +16,9 @@ function Header() {
   }, []);
 
   const toggleColorMode = () => {
-    const newBgColor = isDarkMode ? "rgb(242, 235, 217)" : "rgb(30, 30, 30)";
-    const newTextColor = isDarkMode ? "black" : "white";
-    document.documentElement.style.setProperty("--clr-bg", newBgColor);
+    const newBgColor = isDarkMode ?  "rgb(30, 30, 30)" : "rgb(242, 235, 217)" ;
+    const newTextColor = isDarkMode ? "white" : "black";
+    document.documentElement.style.setProperty("--clr-bg" , newBgColor);
     document.documentElement.style.setProperty("--text-sec", newTextColor);
     setIsDarkMode(!isDarkMode);
   };
@@ -79,7 +79,7 @@ function Header() {
                   data-aos="fade-up"
                   data-aos-delay="1500"
                 >
-                  {isDarkMode ? <FaSun /> : <FaMoon />}
+                  {isDarkMode ? <FaMoon /> : <FaSun />}
                 </button>
               </li>
             </ul>

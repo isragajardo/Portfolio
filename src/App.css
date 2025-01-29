@@ -4,7 +4,7 @@
 
 
 :root {
-        --clr-bg: rgb(242, 235, 217);
+        --clr-bg: rgb(30, 30, 30);
         --clr-bg-alt: rgb(30, 30, 30); /* Un color alternativo */
         --clr-sec: rgb(255, 103, 2);
         --clr-ter: rgb(148, 148, 148);
