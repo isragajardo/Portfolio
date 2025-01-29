@@ -67,5 +67,9 @@
   .nav-link:hover::after {
     transform: translateX(5px);
   }
+
+  .download-btn{
+    color: rgb(89, 171, 248);
+  }
   
   

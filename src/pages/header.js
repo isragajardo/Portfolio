@@ -1,11 +1,10 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import "../styles/header.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import logo from "../img/logo.png";
 
 function Header() {
-
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -20,7 +19,7 @@ function Header() {
           <a className="navbar-brand" href="/">
             <img src={logo} alt="Logo" className="logo-img" />
           </a>
-          
+
           <button
             className="navbar-toggler"
             type="button"
@@ -49,6 +48,19 @@ function Header() {
                   </li>
                 )
               )}
+
+              {/* Botón de descarga */}
+              <li className="nav-item">
+                <a
+                  className="nav-link download-btn"
+                  href="/assets/mi-archivo.pdf"
+                  download="mi-archivo.pdf"
+                  data-aos="fade-up"
+                  data-aos-delay="1500"
+                >
+                  Descarga CV
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -58,8 +70,3 @@ function Header() {
 }
 
 export default Header;
-
-
-
-
-
