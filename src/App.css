@@ -10,7 +10,7 @@
         --clr-ter: rgb(148, 148, 148);
         --font-pr: "Pacifico", cursive;
         --font-sec: "Sour Gummy", sans-serif;
-        --text-sec: black;
+        --text-sec: rgb(255, 255, 255);
       }
 
 body{
