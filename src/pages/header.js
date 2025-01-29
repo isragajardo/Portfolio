@@ -64,7 +64,7 @@ function Header() {
                 <a
                   className="nav-link download-btn"
                   href="/cv.pdf"
-                  download="mi-archivo.pdf"
+                  download="cv-israG.pdf"
                   data-aos="fade-up"
                   data-aos-delay="1500"
                 >
