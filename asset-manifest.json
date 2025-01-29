@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1ccc7473.css",
-    "main.js": "/static/js/main.306ca618.js",
+    "main.js": "/static/js/main.a6fce071.js",
     "static/media/isra.png": "/static/media/isra.7b0bc023812e815a90ff.png",
     "static/media/isra-responsive.png": "/static/media/isra-responsive.84d010f4d44f744e2ee5.png",
     "static/media/los-leones.jpg": "/static/media/los-leones.ee76bc36a2c13797b502.jpg",
@@ -12,10 +12,10 @@
     "static/media/logo.png": "/static/media/logo.09bcc174b67e23e32c3a.png",
     "index.html": "/index.html",
     "main.1ccc7473.css.map": "/static/css/main.1ccc7473.css.map",
-    "main.306ca618.js.map": "/static/js/main.306ca618.js.map"
+    "main.a6fce071.js.map": "/static/js/main.a6fce071.js.map"
   },
   "entrypoints": [
     "static/css/main.1ccc7473.css",
-    "static/js/main.306ca618.js"
+    "static/js/main.a6fce071.js"
   ]
 }
