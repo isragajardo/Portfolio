@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../styles/about.css";
 import Isra from "../img/isra.png";
-import IsraResponsive from "../img/isra-responsive.png";
+import IsraResponsive from "../img/isra.png";
 import { FaArrowDown } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
