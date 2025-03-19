@@ -4,17 +4,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
     height: auto; 
     padding: 40px 20px 20px;
     background-color: var(--clr-pr);
     overflow: auto;
-=======
-    padding: 40px 20px;
-    background-color: var(--clr-pr);
-    overflow: hidden; /* Asegura que el contenido no se desborde */
-    box-sizing: border-box;
->>>>>>> 8f75726 (add experience)
 }
 
 .experience-content {
@@ -27,7 +20,6 @@
     width: 100%;
     margin-top: 100px;
     text-align: left;
-<<<<<<< HEAD
     flex-wrap: wrap;
 }
 .experience-content p{
@@ -37,28 +29,12 @@
 }
 
 .experience-1, .experience-2, .experience-3, .experience-4 {
-=======
-    flex-wrap: wrap; /* Permite que los elementos se ajusten a diferentes tamaños */
-    box-sizing: border-box;
-}
-
-.experience-content p {
-    color: var(--text-sec);
-    margin-bottom: 10px; /* Espaciado entre los párrafos */
-}
-
-.experience-1, .experience-2 {
->>>>>>> 8f75726 (add experience)
     flex: 1;
     padding: 20px;
     border-top: solid 2px var(--clr-sec);
     max-width: 100%;
     box-sizing: border-box;
-<<<<<<< HEAD
    
-=======
-    margin-bottom: 20px; /* Espaciado entre las secciones */
->>>>>>> 8f75726 (add experience)
 }
 
 .tittle {
@@ -68,11 +44,7 @@
     font-size: 1.5rem;
 }
 
-<<<<<<< HEAD
 .experience-1 p, .experience-2 p, .experience-3 p, .experience-4 p {
-=======
-.experience-1 p, .experience-2 p {
->>>>>>> 8f75726 (add experience)
     font-family: var(--font-sec);
     font-size: 1rem;
     line-height: 1.6;
@@ -80,7 +52,6 @@
     overflow-wrap: break-word;
 }
 
-<<<<<<< HEAD
 .scroll-buttons-experience {
     position: absolute;
     bottom: 20px;
@@ -124,9 +95,6 @@
     }
 }
 
-=======
-/* Responsividad para pantallas pequeñas */
->>>>>>> 8f75726 (add experience)
 @media (max-width: 768px) {
     .experience-content {
         flex-direction: column;
@@ -134,19 +102,12 @@
         gap: 2rem;
         padding: 10px;
     }
-<<<<<<< HEAD
    
 
     .experience-1, .experience-2, .experience-3, .experience-4 {
         text-align: center;
         padding: 10px;
         margin-bottom: 50px;
-=======
-
-    .experience-1, .experience-2 {
-        text-align: center;
-        padding: 10px;
->>>>>>> 8f75726 (add experience)
         width: 100%;
     }
 
@@ -154,7 +115,6 @@
         font-size: 1.2rem;
     }
 
-<<<<<<< HEAD
     .experience-1 p, .experience-2 p, .experience-3 p, .experience-4 p {
         font-size: 0.9rem;
     }
@@ -173,46 +133,23 @@
     }
 }
 
-=======
-    .experience-1 p, .experience-2 p {
-        font-size: 0.9rem;
-        margin-bottom: 8px; /* Ajuste en el espaciado entre los párrafos */
-    }
-}
-
-/* Estilo para pantallas muy pequeñas */
->>>>>>> 8f75726 (add experience)
 @media (max-width: 480px) {
     .experience-content {
         padding: 5px;
     }
-<<<<<<< HEAD
   
     .scroll-button-experience {
         width: 35px;
         height: 35px;
         font-size: 16px;
-=======
-
-    .experience-1, .experience-2 {
-        padding: 5px;
->>>>>>> 8f75726 (add experience)
     }
 
     .tittle {
         font-size: 1.1rem;
     }
 
-<<<<<<< HEAD
     .experience-1 p, .experience-2 p, .experience-3 p, .experience-4 p {
         font-size: 0.8rem;
     }
 }
 
-=======
-    .experience-1 p, .experience-2 p {
-        font-size: 0.8rem;
-        margin-bottom: 5px; /* Ajuste en el espaciado entre los párrafos */
-    }
-}
->>>>>>> 8f75726 (add experience)
