@@ -30,7 +30,10 @@ function Experience() {
           <p>- Resolución de incidencias de hardware y software</p>
           <p>- Capacidad para trabajar en equipo y bajo presión</p>
         </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8f75726 (add experience)
         <div
           className="experience-2"
           data-aos="fade-left"
@@ -54,6 +57,21 @@ function Experience() {
           <p>- Gestión de requerimientos e incidencias en software</p>
           <p>- Optimización de procesos para aumentar productividad</p>
         </div>
+<<<<<<< HEAD
+=======
+        <div
+          className="experience-1"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <h2 className="tittle">Software Engineer, Grupo O2 Feb 2025 - Actualidad</h2>
+          <p>- Creacion de software web usando HTML, CSS, JavaScript, React, Api Rest</p>
+          <p>- Uso de Postman para pruebas de API</p>
+          <p>- Mejoras de diseño UI/UX</p>
+          <p>- Gestión de requerimientos e incidencias en software</p>
+          <p>- Optimización de procesos</p>
+        </div>
+>>>>>>> 8f75726 (add experience)
 
         <div
           className="experience-2"
