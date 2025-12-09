@@ -94,7 +94,7 @@ function FooterContact() {
     rel="noopener noreferrer"
     className="whatsapp-btn"
   >
-    💬 Escríbeme por WhatsApp
+    💬 Escríbeme por WhatsApp !
   </a>
 </div>
 
