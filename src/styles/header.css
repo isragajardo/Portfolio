@@ -1,0 +1,301 @@
+/* ================================
+   NAVBAR
+================================ */
+
+.header-wrapper {
+  width: 100%;
+  background: transparent; /* Fondo global */
+  color: var(--text-main);
+  padding-bottom: 20px;
+}
+
+.navbar {
+  padding: 15px 20px;
+  backdrop-filter: blur(14px);
+  background: rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo-img {
+  width: 120px;
+  height: auto;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-link {
+  font-family: var(--font-pr);
+  font-size: 1.15rem;
+  color: var(--text-main);
+  position: relative;
+  text-decoration: none;
+  transition: 0.25s ease;
+  padding: 4px 8px;
+}
+
+/* Hover color */
+.nav-link:hover {
+  color: var(--clr-accent);
+}
+
+/* ================================
+   NAV-LINK BRACKETS < />
+================================ */
+
+.nav-link::before {
+  content: "<";
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  color: var(--clr-accent);
+  opacity: 0.75;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.nav-link::after {
+  content: "/>";
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  color: var(--clr-accent);
+  opacity: 0.75;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* Hover animation */
+.nav-link:hover::before {
+  transform: translate(-3px, -50%);
+  opacity: 1;
+}
+
+.nav-link:hover::after {
+  transform: translate(3px, -50%);
+  opacity: 1;
+}
+
+/* Remove brackets on special buttons */
+.no-brackets::before,
+.no-brackets::after {
+  display: none !important;
+}
+
+/* ================================
+   CV BUTTON
+================================ */
+
+.cv-btn {
+  font-weight: 500;
+  border: 1px solid var(--clr-accent);
+  border-radius: 6px;
+  padding: 6px 14px;
+  color: var(--clr-accent) !important;
+  transition: 0.3s;
+}
+
+.cv-btn:hover {
+  background-color: var(--clr-accent);
+  color: var(--clr-bg) !important;
+}
+
+/* ================================
+   DARK / LIGHT Mode Button
+================================ */
+
+.color-toggle-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--text-main);
+  transition: 0.3s ease;
+}
+
+.color-toggle-btn:hover {
+  color: var(--clr-accent);
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero-container {
+  padding: 160px 20px 120px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-main);
+  background: transparent; /* Integrado al fondo global */
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.hero-title {
+  font-family: var(--font-pr);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.accent {
+  color: var(--clr-accent);
+}
+
+.hero-subtitle {
+  font-size: 1.6rem;
+  margin-top: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.hero-description {
+  margin-top: 20px;
+  font-size: 1.15rem;
+  line-height: 1.75;
+  opacity: 0.9;
+}
+
+/* ================================
+   HERO BUTTONS
+================================ */
+
+.hero-buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.hero-btn {
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* Primary button */
+.hero-btn.primary {
+  background-color: var(--clr-accent);
+  color: var(--clr-bg);
+  box-shadow: 0 4px 12px rgba(90, 176, 255, 0.35);
+}
+
+.hero-btn.primary:hover {
+  background-color: #409de6;
+  transform: translateY(-3px);
+}
+
+/* Secondary button */
+.hero-btn.secondary {
+  border: 2px solid var(--clr-accent);
+  color: var(--clr-accent);
+}
+
+.hero-btn.secondary:hover {
+  background-color: var(--clr-accent);
+  color: var(--clr-bg);
+  transform: translateY(-3px);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+/* ================================
+   RESPONSIVE FIX — HERO FULL-WIDTH
+================================ */
+
+@media (max-width: 900px) {
+
+  /* Hero debe ocupar TODO el alto y ancho */
+  .hero-container {
+    padding: 100px 16px 60px !important;
+    width: 100%;
+    min-height: 100vh !important; /* ← CORREGIDO */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* ← Centrado vertical */
+  }
+
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+    line-height: 1.25;
+  }
+
+  .hero-subtitle {
+    font-size: 1.35rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-top: 18px;
+    padding: 0 6px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .hero-btn {
+    width: 100%;
+    max-width: 330px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero-container {
+    padding: 80px 12px 50px !important; /* Ajustado */
+    min-height: 100vh !important;       /* ← IMPORTANTE */
+    display: flex;
+    justify-content: center;
+    align-items: center;                /* ← Centrado vertical */
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    padding: 0 4px;
+  }
+
+  .hero-btn {
+    max-width: 100%;
+  }
+}
+.navbar-brand-text {
+  color: #5ab0ff; /* azul acento */
+}
+

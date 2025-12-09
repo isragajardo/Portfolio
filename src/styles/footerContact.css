@@ -1,0 +1,140 @@
+/* ============================================
+   FOOTER CONTACT – GLASS PREMIUM
+============================================ */
+
+.footer-contact {
+  width: 100%;
+  padding: 120px 20px;
+  background: transparent; /* se apoya en el fondo global */
+  color: var(--text-main);
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+/* ============================================
+   GLASS CARDS
+============================================ */
+
+.footer-card {
+  background: var(--glass-bg);
+  border-radius: 18px;
+  padding: 25px 28px;
+  width: 320px;
+  border: 1px solid var(--glass-border);
+  text-align: center;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow: var(--shadow-strong), var(--shadow-glow);
+}
+
+.footer-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+  color: var(--clr-accent);
+  font-family: var(--font-pr);
+}
+
+.footer-card p {
+  font-size: 1rem;
+  margin: 6px 0;
+  opacity: 0.85;
+}
+
+/* ============================================
+   FORM STYLING
+============================================ */
+
+.footer-card form input,
+.footer-card form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-main);
+  margin-bottom: 12px;
+  transition: 0.25s;
+}
+
+.footer-card form input:focus,
+.footer-card form textarea:focus {
+  outline: none;
+  border-color: var(--clr-accent);
+  box-shadow: 0 0 8px var(--clr-accent-glow);
+}
+
+.send-btn {
+  width: 100%;
+  padding: 12px;
+  background: var(--clr-accent);
+  border: none;
+  color: var(--clr-bg);
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: #409de6;
+  transform: translateY(-3px);
+}
+
+/* ============================================
+   SOCIAL LINKS
+============================================ */
+
+.repo-title {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.repo-icon {
+  font-size: 2.4rem;
+  color: var(--clr-accent);
+  transition: 0.25s ease;
+}
+
+.repo-icon:hover {
+  color: var(--clr-accent-glow);
+  transform: scale(1.1);
+}
+
+.social-icons {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: var(--clr-accent);
+  transition: 0.25s ease;
+}
+
+.social-icons a:hover {
+  color: var(--clr-accent-glow);
+  transform: scale(1.1);
+}
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+@media (max-width: 900px) {
+  .footer-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
