@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.4438c473.css",
-    "main.js": "/static/js/main.ed47ae0b.js",
+    "main.css": "/static/css/main.43d32566.css",
+    "main.js": "/static/js/main.1bf5596c.js",
     "static/media/los-leones.jpg": "/static/media/los-leones.ee76bc36a2c13797b502.jpg",
     "static/media/isra.png": "/static/media/isra.7bfeef5f42ac7d8452f8.png",
+    "static/media/logo.png": "/static/media/logo.ee0c3ba22ebc6d55931a.png",
     "static/media/desarrollo-frontend.png": "/static/media/desarrollo-frontend.be5dfeeaeec0d4c69190.png",
     "static/media/javaScript.png": "/static/media/javaScript.a866456790d0333e93db.png",
     "static/media/desarrollo-web.png": "/static/media/desarrollo-web.aee0e54b89aab0e91358.png",
     "static/media/react.png": "/static/media/react.1271b7ad7e4184c91eb5.png",
-    "static/media/logo.png": "/static/media/logo.09bcc174b67e23e32c3a.png",
     "index.html": "/index.html",
-    "main.4438c473.css.map": "/static/css/main.4438c473.css.map",
-    "main.ed47ae0b.js.map": "/static/js/main.ed47ae0b.js.map"
+    "main.43d32566.css.map": "/static/css/main.43d32566.css.map",
+    "main.1bf5596c.js.map": "/static/js/main.1bf5596c.js.map"
   },
   "entrypoints": [
-    "static/css/main.4438c473.css",
-    "static/js/main.ed47ae0b.js"
+    "static/css/main.43d32566.css",
+    "static/js/main.1bf5596c.js"
   ]
 }
