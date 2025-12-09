@@ -220,16 +220,20 @@
    RESPONSIVE FIX — HERO FULL-WIDTH
 ================================ */
 
+/* ================================
+   RESPONSIVE FIX — CORRECTO
+================================ */
+
+/* Tablets y móviles grandes */
 @media (max-width: 900px) {
 
-  /* Hero debe ocupar TODO el alto y ancho */
   .hero-container {
-    padding: 100px 16px 60px !important;
+    padding: 80px 16px 40px !important;  /* MUCHÍSIMO MENOS ESPACIO */
     width: 100%;
-    min-height: 100vh !important; /* ← CORREGIDO */
+    min-height: auto !important;         /* QUITAMOS EL 100vh */
     display: flex;
     justify-content: center;
-    align-items: center; /* ← Centrado vertical */
+    align-items: flex-start;             /* Ya no centra vertical */
   }
 
   .hero-content {
@@ -239,43 +243,17 @@
     padding: 0 !important;
     text-align: center !important;
   }
-
-  .hero-title {
-    font-size: 2.4rem;
-    line-height: 1.25;
-  }
-
-  .hero-subtitle {
-    font-size: 1.35rem;
-  }
-
-  .hero-description {
-    font-size: 1rem;
-    margin-top: 18px;
-    padding: 0 6px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-    width: 100%;
-  }
-
-  .hero-btn {
-    width: 100%;
-    max-width: 330px;
-  }
 }
 
+/* Celulares pequeños */
 @media (max-width: 480px) {
 
   .hero-container {
-    padding: 80px 12px 50px !important; /* Ajustado */
-    min-height: 100vh !important;       /* ← IMPORTANTE */
+    padding: 70px 12px 30px !important;  /* PERFECTO PARA MÓVIL */
+    min-height: auto !important;         /* NUNCA usar 100vh */
     display: flex;
     justify-content: center;
-    align-items: center;                /* ← Centrado vertical */
+    align-items: flex-start;
   }
 
   .hero-title {
@@ -295,6 +273,7 @@
     max-width: 100%;
   }
 }
+
 .navbar-brand-text {
   color: #5ab0ff; /* azul acento */
 }
