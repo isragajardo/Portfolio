@@ -46,12 +46,7 @@ function About() {
                 </div>
             </div>
 
-            {/* BOTÓN SCROLL */}
-            <div className="scroll-down" data-aos="fade-up" data-aos-delay="300">
-                <a href="#experiencia" className="scroll-button">
-                    <FaArrowDown className="arrow-icon" />
-                </a>
-            </div>
+            
         </section>
     );
 }

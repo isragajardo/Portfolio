@@ -59,34 +59,45 @@ function FooterContact() {
           </form>
         </div>
 
-        {/* SOCIAL MEDIA CARD */}
-        <div className="footer-card">
-          <h3>Sígueme</h3>
+      {/* SOCIAL MEDIA CARD */}
+<div className="footer-card">
+  <h3>Sígueme</h3>
 
-          <div className="social-icons">
-            <a
-              href="https://www.linkedin.com/in/israel-gajardo-66357716b/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://www.instagram.com/isragaj/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://github.com/isragajardo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub />
-            </a>
-          </div>
-        </div>
+  <div className="social-icons">
+    <a
+      href="https://www.linkedin.com/in/israel-gajardo-66357716b/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaLinkedin />
+    </a>
+    <a
+      href="https://www.instagram.com/isragaj/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaInstagram />
+    </a>
+    <a
+      href="https://github.com/isragajardo"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaGithub />
+    </a>
+  </div>
+
+  {/* BOTÓN WHATSAPP */}
+  <a
+    href="https://wa.me/56990603728"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="whatsapp-btn"
+  >
+    💬 Escríbeme por WhatsApp
+  </a>
+</div>
+
 
       </div>
     </footer>
