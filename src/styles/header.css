@@ -225,54 +225,42 @@
 ================================ */
 
 /* Tablets y móviles grandes */
-@media (max-width: 900px) {
+/* ==========================================
+   FIX DEFINITIVO PARA QUE NO SE ASOME EL ABOUT
+========================================== */
 
+/* Desktop */
+.hero-container {
+  min-height: calc(100vh - 90px); /* Hero = alto pantalla - navbar */
+  padding-top: 80px !important;   /* < Antes 160px */
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
   .hero-container {
-    padding: 80px 16px 40px !important;  /* MUCHÍSIMO MENOS ESPACIO */
-    width: 100%;
-    min-height: auto !important;         /* QUITAMOS EL 100vh */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;             /* Ya no centra vertical */
+    min-height: calc(100vh - 70px); /* Navbar más pequeño */
+    padding-top: 40px !important;   /* Mucho menos */
+    padding-bottom: 60px;
   }
 
   .hero-content {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    text-align: center !important;
+    margin-top: 0 !important;
   }
 }
 
-/* Celulares pequeños */
+/* Móvil */
 @media (max-width: 480px) {
-
   .hero-container {
-    padding: 70px 12px 30px !important;  /* PERFECTO PARA MÓVIL */
-    min-height: auto !important;         /* NUNCA usar 100vh */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .hero-description {
-    font-size: 0.95rem;
-    padding: 0 4px;
-  }
-
-  .hero-btn {
-    max-width: 100%;
+    min-height: calc(100vh - 60px);
+    padding-top: 20px !important;  /* Casi sin espacio */
+    padding-bottom: 40px;
   }
 }
+
 
 .navbar-brand-text {
   color: #5ab0ff; /* azul acento */
