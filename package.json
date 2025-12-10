@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://isracode.com",
+  "homepage": "https://www.isracode.com",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@popperjs/core": "^2.11.8",
@@ -21,18 +21,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-
- 
-    "deploy": "npm run build && npm run copy-docs",
-    "copy-docs": "rm -rf docs && mkdir docs && cp -r build/* docs/"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   },
   "browserslist": {
     "production": [
@@ -45,8 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
