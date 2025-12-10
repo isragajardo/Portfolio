@@ -5,7 +5,7 @@
 .footer-contact {
   width: 100%;
   padding: 120px 20px;
-  background: transparent; /* se apoya en el fondo global */
+  background: transparent;
   color: var(--text-main);
   text-align: center;
 }
@@ -32,7 +32,6 @@
   text-align: center;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-
   box-shadow: var(--shadow-strong), var(--shadow-glow);
 }
 
@@ -47,46 +46,6 @@
   font-size: 1rem;
   margin: 6px 0;
   opacity: 0.85;
-}
-
-/* ============================================
-   FORM STYLING
-============================================ */
-
-.footer-card form input,
-.footer-card form textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: var(--text-main);
-  margin-bottom: 12px;
-  transition: 0.25s;
-}
-
-.footer-card form input:focus,
-.footer-card form textarea:focus {
-  outline: none;
-  border-color: var(--clr-accent);
-  box-shadow: 0 0 8px var(--clr-accent-glow);
-}
-
-.send-btn {
-  width: 100%;
-  padding: 12px;
-  background: var(--clr-accent);
-  border: none;
-  color: var(--clr-bg);
-  border-radius: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.send-btn:hover {
-  background: #409de6;
-  transform: translateY(-3px);
 }
 
 /* ============================================
@@ -129,6 +88,64 @@
 }
 
 /* ============================================
+   WHATSAPP BUTTON – PREMIUM NEON GLASS
+============================================ */
+
+.whatsapp-btn {
+  margin-top: 25px;
+  padding: 14px 24px;
+  border-radius: 14px;
+
+  background: rgba(77, 187, 255, 0.1);
+  border: 1px solid rgba(77, 187, 255, 0.45);
+  color: #4dbbff;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+
+  display: inline-block;
+  text-decoration: none;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  transition: 0.3s ease;
+  box-shadow: 0 0 14px rgba(77, 187, 255, 0.25);
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow animado alrededor */
+.whatsapp-btn.neon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  padding: 2px;
+  background: linear-gradient(120deg, #4dbbff, #59d6ff, #4dbbff);
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: neonGlow 4s linear infinite;
+}
+
+/* Efecto hover */
+.whatsapp-btn:hover {
+  background: #4dbbff;
+  color: #071018;
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(77, 187, 255, 0.65);
+}
+
+@keyframes neonGlow {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* ============================================
    RESPONSIVE
 ============================================ */
 
@@ -137,34 +154,4 @@
     width: 100%;
     max-width: 400px;
   }
-}
-/* ============================================
-   BOTÓN WHATSAPP — GLASS + NEÓN
-============================================ */
-.whatsapp-btn {
-  margin-top: 20px;
-  display: inline-block;
-  padding: 12px 20px;
-  border-radius: 12px;
-
-  background: rgba(77, 187, 255, 0.12); /* glass suave */
-  border: 1px solid rgba(77, 187, 255, 0.35);
-  color: #4dbbff;
-
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  transition: 0.3s ease;
-  box-shadow: 0 0 15px rgba(77, 187, 255, 0.25);
-}
-
-.whatsapp-btn:hover {
-  background: #4dbbff;
-  color: #071018;
-  transform: translateY(-4px);
-  box-shadow: 0 0 18px rgba(77, 187, 255, 0.55);
 }
